@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44645FC485CCE8C560B66D94 /* Pods_Burkozel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2B53FF79381343BE432FD4 /* Pods_Burkozel.framework */; };
+		A509041E2211BE7500A0E7CE /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A509041D2211BE7500A0E7CE /* PhotoView.swift */; };
+		A50932A1216F537D006D0A3C /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50932A0216F537D006D0A3C /* InsetTextField.swift */; };
+		A50932A3216FA381006D0A3C /* ShadowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50932A2216FA381006D0A3C /* ShadowedView.swift */; };
+		A54F2F8C216E856F00FC1D06 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F2F8B216E856F00FC1D06 /* AppController.swift */; };
+		A54F2F8E216E861D00FC1D06 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F2F8D216E861D00FC1D06 /* NavigationController.swift */; };
+		A54F2F91216E867300FC1D06 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F2F90216E867300FC1D06 /* UIColor+Additions.swift */; };
+		A54F2F94216E86D000FC1D06 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F2F92216E86D000FC1D06 /* LoginViewController.swift */; };
+		A54F2F95216E86D000FC1D06 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54F2F93216E86D000FC1D06 /* LoginViewController.xib */; };
+		A54F2F97216E88B300FC1D06 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F2F96216E88B300FC1D06 /* UIView+Additions.swift */; };
+		A5664527218C6C130001E3E7 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664526218C6C130001E3E7 /* AppData.swift */; };
+		A5664529218C90F50001E3E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5664528218C90F50001E3E7 /* SettingsViewController.swift */; };
+		A5A8B72A216F40CF00FAC416 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A8B729216F40CF00FAC416 /* TabBarController.swift */; };
+		A5E77B18216649E2009A7505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E77B17216649E2009A7505 /* AppDelegate.swift */; };
+		A5E77B1A216649E2009A7505 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E77B19216649E2009A7505 /* MainViewController.swift */; };
+		A5E77B1D216649E2009A7505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E77B1B216649E2009A7505 /* Main.storyboard */; };
+		A5E77B1F216649E4009A7505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E77B1E216649E4009A7505 /* Assets.xcassets */; };
+		A5E77B22216649E4009A7505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E77B20216649E4009A7505 /* LaunchScreen.storyboard */; };
+		A5E77B32216661B7009A7505 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5E77B31216661B7009A7505 /* GoogleService-Info.plist */; };
+		A5EE2BAF220DA67100CF50B3 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE2BAE220DA67100CF50B3 /* ColorButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B2B53FF79381343BE432FD4 /* Pods_Burkozel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Burkozel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AFCE5B0E99A1D910D809B2 /* Pods-Burkozel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burkozel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Burkozel/Pods-Burkozel.release.xcconfig"; sourceTree = "<group>"; };
+		8BF70DB08610ED82C69523CD /* Pods-Burkozel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burkozel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Burkozel/Pods-Burkozel.debug.xcconfig"; sourceTree = "<group>"; };
+		A509041D2211BE7500A0E7CE /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		A50932A0216F537D006D0A3C /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		A50932A2216FA381006D0A3C /* ShadowedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowedView.swift; sourceTree = "<group>"; };
+		A54F2F8B216E856F00FC1D06 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		A54F2F8D216E861D00FC1D06 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A54F2F90216E867300FC1D06 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		A54F2F92216E86D000FC1D06 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A54F2F93216E86D000FC1D06 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A54F2F96216E88B300FC1D06 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		A5664526218C6C130001E3E7 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		A5664528218C90F50001E3E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A5A8B729216F40CF00FAC416 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A5E77B14216649E2009A7505 /* Burkozel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Burkozel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E77B17216649E2009A7505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E77B19216649E2009A7505 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A5E77B1C216649E2009A7505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E77B1E216649E4009A7505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E77B21216649E4009A7505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E77B23216649E4009A7505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E77B31216661B7009A7505 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5EE2BAE220DA67100CF50B3 /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E77B11216649E2009A7505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44645FC485CCE8C560B66D94 /* Pods_Burkozel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684524C275D5DBDCBE5F514A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B2B53FF79381343BE432FD4 /* Pods_Burkozel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83CAE73E338091C4652BDE97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BF70DB08610ED82C69523CD /* Pods-Burkozel.debug.xcconfig */,
+				77AFCE5B0E99A1D910D809B2 /* Pods-Burkozel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A54F2F8F216E864F00FC1D06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A54F2F90216E867300FC1D06 /* UIColor+Additions.swift */,
+				A54F2F96216E88B300FC1D06 /* UIView+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5E77B0B216649E2009A7505 = {
+			isa = PBXGroup;
+			children = (
+				A5E77B16216649E2009A7505 /* Burkozel */,
+				A5E77B15216649E2009A7505 /* Products */,
+				83CAE73E338091C4652BDE97 /* Pods */,
+				684524C275D5DBDCBE5F514A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		A5E77B15216649E2009A7505 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E77B14216649E2009A7505 /* Burkozel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E77B16216649E2009A7505 /* Burkozel */ = {
+			isa = PBXGroup;
+			children = (
+				A54F2F8B216E856F00FC1D06 /* AppController.swift */,
+				A5664526218C6C130001E3E7 /* AppData.swift */,
+				A5E77B17216649E2009A7505 /* AppDelegate.swift */,
+				A5E77B2E21665DEF009A7505 /* Models */,
+				A5E77B2D21665DE6009A7505 /* Views */,
+				A5E77B2C21665DD4009A7505 /* Controllers */,
+				A5E77B3021665FB1009A7505 /* Layouts */,
+				A5E77B23216649E4009A7505 /* Info.plist */,
+				A54F2F8F216E864F00FC1D06 /* Extensions */,
+				A5E77B2F21665F90009A7505 /* Support Files */,
+			);
+			path = Burkozel;
+			sourceTree = "<group>";
+		};
+		A5E77B2C21665DD4009A7505 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A54F2F92216E86D000FC1D06 /* LoginViewController.swift */,
+				A5A8B729216F40CF00FAC416 /* TabBarController.swift */,
+				A54F2F8D216E861D00FC1D06 /* NavigationController.swift */,
+				A5E77B19216649E2009A7505 /* MainViewController.swift */,
+				A5664528218C90F50001E3E7 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5E77B2D21665DE6009A7505 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A50932A0216F537D006D0A3C /* InsetTextField.swift */,
+				A50932A2216FA381006D0A3C /* ShadowedView.swift */,
+				A509041D2211BE7500A0E7CE /* PhotoView.swift */,
+				A5EE2BAE220DA67100CF50B3 /* ColorButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5E77B2E21665DEF009A7505 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5E77B2F21665F90009A7505 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E77B1E216649E4009A7505 /* Assets.xcassets */,
+				A5E77B31216661B7009A7505 /* GoogleService-Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		A5E77B3021665FB1009A7505 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				A54F2F93216E86D000FC1D06 /* LoginViewController.xib */,
+				A5E77B1B216649E2009A7505 /* Main.storyboard */,
+				A5E77B20216649E4009A7505 /* LaunchScreen.storyboard */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E77B13216649E2009A7505 /* Burkozel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E77B26216649E4009A7505 /* Build configuration list for PBXNativeTarget "Burkozel" */;
+			buildPhases = (
+				C16B8EE5EF42B487B0A0D0E9 /* [CP] Check Pods Manifest.lock */,
+				A5E77B10216649E2009A7505 /* Sources */,
+				A5E77B11216649E2009A7505 /* Frameworks */,
+				A5E77B12216649E2009A7505 /* Resources */,
+				289E31CE9177D83DBC2C47D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Burkozel;
+			productName = Burkozel;
+			productReference = A5E77B14216649E2009A7505 /* Burkozel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E77B0C216649E2009A7505 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = SwiftLab;
+				TargetAttributes = {
+					A5E77B13216649E2009A7505 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = A5E77B0F216649E2009A7505 /* Build configuration list for PBXProject "Burkozel" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E77B0B216649E2009A7505;
+			productRefGroup = A5E77B15216649E2009A7505 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E77B13216649E2009A7505 /* Burkozel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E77B12216649E2009A7505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54F2F95216E86D000FC1D06 /* LoginViewController.xib in Resources */,
+				A5E77B22216649E4009A7505 /* LaunchScreen.storyboard in Resources */,
+				A5E77B32216661B7009A7505 /* GoogleService-Info.plist in Resources */,
+				A5E77B1F216649E4009A7505 /* Assets.xcassets in Resources */,
+				A5E77B1D216649E2009A7505 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		289E31CE9177D83DBC2C47D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burkozel/Pods-Burkozel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burkozel/Pods-Burkozel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Burkozel/Pods-Burkozel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16B8EE5EF42B487B0A0D0E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Burkozel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E77B10216649E2009A7505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54F2F94216E86D000FC1D06 /* LoginViewController.swift in Sources */,
+				A5A8B72A216F40CF00FAC416 /* TabBarController.swift in Sources */,
+				A5E77B1A216649E2009A7505 /* MainViewController.swift in Sources */,
+				A54F2F91216E867300FC1D06 /* UIColor+Additions.swift in Sources */,
+				A5664527218C6C130001E3E7 /* AppData.swift in Sources */,
+				A54F2F8E216E861D00FC1D06 /* NavigationController.swift in Sources */,
+				A5E77B18216649E2009A7505 /* AppDelegate.swift in Sources */,
+				A54F2F97216E88B300FC1D06 /* UIView+Additions.swift in Sources */,
+				A5EE2BAF220DA67100CF50B3 /* ColorButton.swift in Sources */,
+				A509041E2211BE7500A0E7CE /* PhotoView.swift in Sources */,
+				A54F2F8C216E856F00FC1D06 /* AppController.swift in Sources */,
+				A50932A1216F537D006D0A3C /* InsetTextField.swift in Sources */,
+				A50932A3216FA381006D0A3C /* ShadowedView.swift in Sources */,
+				A5664529218C90F50001E3E7 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5E77B1B216649E2009A7505 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E77B1C216649E2009A7505 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E77B20216649E4009A7505 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E77B21216649E4009A7505 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E77B24216649E4009A7505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5E77B25216649E4009A7505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E77B27216649E4009A7505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF70DB08610ED82C69523CD /* Pods-Burkozel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95CZYA7J5G;
+				INFOPLIST_FILE = Burkozel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SwiftLab.Burkozel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E77B28216649E4009A7505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AFCE5B0E99A1D910D809B2 /* Pods-Burkozel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95CZYA7J5G;
+				INFOPLIST_FILE = Burkozel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.SwiftLab.Burkozel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E77B0F216649E2009A7505 /* Build configuration list for PBXProject "Burkozel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E77B24216649E4009A7505 /* Debug */,
+				A5E77B25216649E4009A7505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E77B26216649E4009A7505 /* Build configuration list for PBXNativeTarget "Burkozel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E77B27216649E4009A7505 /* Debug */,
+				A5E77B28216649E4009A7505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5E77B0C216649E2009A7505 /* Project object */;
+}

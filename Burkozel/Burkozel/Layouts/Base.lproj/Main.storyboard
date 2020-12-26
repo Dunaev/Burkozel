@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Burkozel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main_background" translatesAutoresizingMaskIntoConstraints="NO" id="0vb-dI-C2e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_top" translatesAutoresizingMaskIntoConstraints="NO" id="miz-ob-dR6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="MVT-oP-uCf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_3589_720" translatesAutoresizingMaskIntoConstraints="NO" id="A09-sx-oKR" customClass="PhotoView" customModule="Burkozel" customModuleProvider="target">
+                                <rect key="frame" x="16" y="11" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="Nfj-zz-ro8"/>
+                                    <constraint firstAttribute="height" constant="62" id="R4J-2r-eHj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="748-NC-bQl">
+                                <rect key="frame" x="72.5" y="161.5" width="230" height="344"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-ta-hNO" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="PVq-Xl-wAp"/>
+                                            <constraint firstAttribute="width" constant="230" id="zWt-fz-aFT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                        <state key="normal" title="Друзья" image="button_icon_friends">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="friendsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bl9-bn-zcj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ9-s0-C65" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                        <state key="normal" title="Турниры" image="button_icon_tournirs">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tournirsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF2-VG-UXl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWx-tj-E3z" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                        <state key="normal" title="Достижения" image="button_icon_achievments">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="achievmentsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KrE-uj-nbA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhD-9c-Qjr" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                        <state key="normal" title="Настройки" image="button_icon_settings">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJP-bV-EcE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csb-5f-WXt" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                        <state key="normal" title="Поделиться" image="button_icon_share">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cp7-LZ-rWL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMl-O3-TZj" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="300" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                        <state key="normal" title="Правила" image="button_icon_rules">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIs-FE-fgt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Csb-5f-WXt" firstAttribute="width" secondItem="ufK-ta-hNO" secondAttribute="width" id="QbS-aX-isy"/>
+                                    <constraint firstItem="UhD-9c-Qjr" firstAttribute="height" secondItem="ufK-ta-hNO" secondAttribute="height" id="QzE-OT-Sdt"/>
+                                    <constraint firstItem="xMl-O3-TZj" firstAttribute="height" secondItem="ufK-ta-hNO" secondAttribute="height" id="ROE-3E-9gh"/>
+                                    <constraint firstItem="PWx-tj-E3z" firstAttribute="width" secondItem="ufK-ta-hNO" secondAttribute="width" id="RvL-qD-CyX"/>
+                                    <constraint firstItem="qJ9-s0-C65" firstAttribute="height" secondItem="ufK-ta-hNO" secondAttribute="height" id="U2e-Lh-45a"/>
+                                    <constraint firstItem="qJ9-s0-C65" firstAttribute="width" secondItem="ufK-ta-hNO" secondAttribute="width" id="UtS-PS-mXm"/>
+                                    <constraint firstItem="xMl-O3-TZj" firstAttribute="width" secondItem="ufK-ta-hNO" secondAttribute="width" id="XnL-fH-9sI"/>
+                                    <constraint firstItem="UhD-9c-Qjr" firstAttribute="width" secondItem="ufK-ta-hNO" secondAttribute="width" id="r47-bu-cc4"/>
+                                    <constraint firstItem="Csb-5f-WXt" firstAttribute="height" secondItem="ufK-ta-hNO" secondAttribute="height" id="uGe-JM-daw"/>
+                                    <constraint firstItem="PWx-tj-E3z" firstAttribute="height" secondItem="ufK-ta-hNO" secondAttribute="height" id="upv-Pz-hn0"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sergey Dunaev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBQ-jD-67P">
+                                <rect key="frame" x="102" y="40.5" width="173" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A09-sx-oKR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="6n1-GB-e4W"/>
+                            <constraint firstAttribute="trailing" secondItem="miz-ob-dR6" secondAttribute="trailing" id="77p-O1-jR0"/>
+                            <constraint firstItem="0vb-dI-C2e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="88c-Nh-zf7"/>
+                            <constraint firstItem="0vb-dI-C2e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AM3-Up-fZZ"/>
+                            <constraint firstItem="748-NC-bQl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gzw-ol-lrC"/>
+                            <constraint firstItem="FBQ-jD-67P" firstAttribute="centerY" secondItem="A09-sx-oKR" secondAttribute="centerY" constant="10" id="HQa-OI-S8j"/>
+                            <constraint firstAttribute="trailing" secondItem="0vb-dI-C2e" secondAttribute="trailing" id="Ica-gz-tVB"/>
+                            <constraint firstItem="748-NC-bQl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LjA-13-6CE"/>
+                            <constraint firstItem="miz-ob-dR6" firstAttribute="trailing" secondItem="FBQ-jD-67P" secondAttribute="trailing" constant="100" id="TmQ-wG-Cez"/>
+                            <constraint firstItem="miz-ob-dR6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cdy-yS-ai0"/>
+                            <constraint firstItem="miz-ob-dR6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fjQ-ad-9bQ"/>
+                            <constraint firstItem="FBQ-jD-67P" firstAttribute="leading" secondItem="A09-sx-oKR" secondAttribute="trailing" constant="24" id="hSB-7f-arh"/>
+                            <constraint firstItem="A09-sx-oKR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="11" id="ugD-1C-BuJ"/>
+                            <constraint firstAttribute="bottom" secondItem="0vb-dI-C2e" secondAttribute="bottom" id="ya9-YW-nuW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BHl-lN-WTn"/>
+                    <connections>
+                        <outlet property="achievmentsButton" destination="PWx-tj-E3z" id="aSy-PJ-hHf"/>
+                        <outlet property="friendsButton" destination="ufK-ta-hNO" id="EK8-oR-PTd"/>
+                        <outlet property="rulesButton" destination="xMl-O3-TZj" id="zMk-31-uMB"/>
+                        <outlet property="settingsButton" destination="UhD-9c-Qjr" id="PIN-g5-OBT"/>
+                        <outlet property="shareButton" destination="Csb-5f-WXt" id="fCR-KG-0Me"/>
+                        <outlet property="tournirsButton" destination="qJ9-s0-C65" id="Zp9-Re-aWv"/>
+                        <outlet property="userNameLabel" destination="FBQ-jD-67P" id="47z-8r-woS"/>
+                        <outlet property="userPhotoImageView" destination="A09-sx-oKR" id="dBz-lU-Hkz"/>
+                        <segue destination="XJj-OJ-KM0" kind="show" identifier="ShowSettings" id="PlQ-a2-6bT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.8" y="-668.81559220389806"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="rxb-AU-sQ0">
+            <objects>
+                <viewController id="XJj-OJ-KM0" customClass="SettingsViewController" customModule="Burkozel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ii-3h-1Pp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main_background" translatesAutoresizingMaskIntoConstraints="NO" id="wkO-i3-YjY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_top" translatesAutoresizingMaskIntoConstraints="NO" id="uCB-cD-8dZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="4Io-Ds-9Ua"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ro-aX-Ea4">
+                                <rect key="frame" x="10" y="4" width="84" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="cGv-N9-hox"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                <state key="normal" title="Главная" image="back_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="XJj-OJ-KM0" eventType="touchUpInside" id="nB0-3L-SLq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBk-3k-TTL">
+                                <rect key="frame" x="133.5" y="2" width="108" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LTS-wf-whQ">
+                                <rect key="frame" x="20" y="101" width="335" height="497"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="x2M-WB-TjU">
+                                        <rect key="frame" x="28.5" y="0.0" width="278" height="80"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_3589_720" translatesAutoresizingMaskIntoConstraints="NO" id="WtR-pO-Pdc" customClass="PhotoView" customModule="Burkozel" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="5EY-uu-XzC"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ePf-yL-5hg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-H7-yAl" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                                <rect key="frame" x="128" y="20" width="150" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="8Vn-BI-bAi"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jcl-7Q-LJk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                                <state key="normal" title="Загрузить фото">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="blue"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wSl-H7-yAl" firstAttribute="centerY" secondItem="WtR-pO-Pdc" secondAttribute="centerY" id="bbI-QG-UMD"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxR-oH-Pag">
+                                        <rect key="frame" x="0.0" y="106.5" width="335" height="110"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-jH-CB2">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="110"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_frame_up" translatesAutoresizingMaskIntoConstraints="NO" id="J9E-7V-egM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="AB1-Un-Ka5"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_frame_down" translatesAutoresizingMaskIntoConstraints="NO" id="BGU-zy-cQl">
+                                                        <rect key="frame" x="0.0" y="54" width="335" height="54"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="cFS-o9-QCu"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Звук" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3f-fV-DVB">
+                                                        <rect key="frame" x="20" y="16" width="38.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="shadowOffset" width="0.0" height="-2"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вибрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF7-2w-Ms7">
+                                                        <rect key="frame" x="20" y="70" width="80" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.246869649" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <size key="shadowOffset" width="0.0" height="-2"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wDj-Q0-oHl">
+                                                        <rect key="frame" x="266" y="11.5" width="51" height="31"/>
+                                                    </switch>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QZp-57-T7x">
+                                                        <rect key="frame" x="266" y="65.5" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="QZp-57-T7x" secondAttribute="trailing" constant="20" id="1NR-DX-Ny2"/>
+                                                    <constraint firstItem="J9E-7V-egM" firstAttribute="leading" secondItem="LxY-jH-CB2" secondAttribute="leading" id="2Nj-se-wog"/>
+                                                    <constraint firstItem="QZp-57-T7x" firstAttribute="centerY" secondItem="fF7-2w-Ms7" secondAttribute="centerY" id="3Kh-B8-MJm"/>
+                                                    <constraint firstItem="q3f-fV-DVB" firstAttribute="leading" secondItem="J9E-7V-egM" secondAttribute="leading" constant="20" id="4Ud-al-WSJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BGU-zy-cQl" secondAttribute="trailing" id="51R-hg-IwJ"/>
+                                                    <constraint firstItem="fF7-2w-Ms7" firstAttribute="leading" secondItem="BGU-zy-cQl" secondAttribute="leading" constant="20" id="5rs-dh-H4b"/>
+                                                    <constraint firstAttribute="trailing" secondItem="J9E-7V-egM" secondAttribute="trailing" id="EbB-gB-Tgg"/>
+                                                    <constraint firstItem="BGU-zy-cQl" firstAttribute="centerY" secondItem="fF7-2w-Ms7" secondAttribute="centerY" id="Fq9-m3-a4H"/>
+                                                    <constraint firstItem="wDj-Q0-oHl" firstAttribute="centerY" secondItem="J9E-7V-egM" secondAttribute="centerY" id="LgN-qe-r2S"/>
+                                                    <constraint firstAttribute="height" constant="110" id="RTs-Ty-1sO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wDj-Q0-oHl" secondAttribute="trailing" constant="20" id="e52-mM-LBs"/>
+                                                    <constraint firstItem="J9E-7V-egM" firstAttribute="top" secondItem="LxY-jH-CB2" secondAttribute="top" id="hhy-K4-B4i"/>
+                                                    <constraint firstItem="q3f-fV-DVB" firstAttribute="centerY" secondItem="J9E-7V-egM" secondAttribute="centerY" id="ljN-eP-OKK"/>
+                                                    <constraint firstItem="BGU-zy-cQl" firstAttribute="leading" secondItem="LxY-jH-CB2" secondAttribute="leading" id="ojF-8b-MTg"/>
+                                                    <constraint firstItem="J9E-7V-egM" firstAttribute="bottom" secondItem="BGU-zy-cQl" secondAttribute="top" id="y3z-bI-5Uk"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="LxY-jH-CB2" secondAttribute="trailing" id="UQ4-gL-Tn2"/>
+                                            <constraint firstItem="LxY-jH-CB2" firstAttribute="leading" secondItem="QxR-oH-Pag" secondAttribute="leading" id="vCl-Ho-81W"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T3L-76-OWj">
+                                        <rect key="frame" x="0.0" y="242.5" width="335" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сортировка карт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4H-FP-tum">
+                                                <rect key="frame" x="78.5" y="0.0" width="178.5" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <color key="textColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="0.0" height="-2"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QxI-Tr-oe5">
+                                                <rect key="frame" x="0.0" y="34" width="335" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSZ-o8-kwq" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.68582025700000004" blue="0.1967449235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="HCS-Ef-xeo"/>
+                                                            <constraint firstAttribute="height" constant="40" id="z1K-gd-uAD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                                        <state key="normal" title="По масти">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="green"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="bySuitTapped:" destination="XJj-OJ-KM0" eventType="touchUpInside" id="76u-FC-61f"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0J-BQ-qMe" customClass="ColorButton" customModule="Burkozel" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="140" height="40"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="lkP-Bf-KIm"/>
+                                                            <constraint firstAttribute="height" constant="40" id="pGC-yw-qQG"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="-2"/>
+                                                        <state key="normal" title="По значению">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.24686964897260275" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="imageColor" value="green"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="byValueTapped:" destination="XJj-OJ-KM0" eventType="touchUpInside" id="r7c-dx-yrX"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="QxI-Tr-oe5" secondAttribute="trailing" id="ffl-l4-9jN"/>
+                                            <constraint firstItem="QxI-Tr-oe5" firstAttribute="leading" secondItem="T3L-76-OWj" secondAttribute="leading" id="ntj-yF-ipu"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aZD-sK-IX0">
+                                        <rect key="frame" x="83.5" y="343" width="168.5" height="154"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбор рубашки" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rme-gx-Rgw">
+                                                <rect key="frame" x="0.0" y="0.0" width="168.5" height="26"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <color key="textColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.246869649" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="0.0" height="-2"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03-Красная" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-FH-xq0">
+                                                <rect key="frame" x="42" y="34" width="84" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="84" id="8WO-oy-K7K"/>
+                                                    <constraint firstAttribute="height" constant="120" id="nG5-AN-z0k"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="T3L-76-OWj" firstAttribute="leading" secondItem="LTS-wf-whQ" secondAttribute="leading" id="DH2-zh-bc4"/>
+                                    <constraint firstAttribute="trailing" secondItem="QxR-oH-Pag" secondAttribute="trailing" id="G0h-un-ov5"/>
+                                    <constraint firstItem="QxR-oH-Pag" firstAttribute="leading" secondItem="LTS-wf-whQ" secondAttribute="leading" id="SGA-UV-bti"/>
+                                    <constraint firstAttribute="trailing" secondItem="T3L-76-OWj" secondAttribute="trailing" id="zMT-ty-8fk"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jeX-IY-hUu"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LTS-wf-whQ" firstAttribute="top" secondItem="uCB-cD-8dZ" secondAttribute="bottom" constant="20" id="5Ek-gw-2BW"/>
+                            <constraint firstItem="QBk-3k-TTL" firstAttribute="centerX" secondItem="9ii-3h-1Pp" secondAttribute="centerX" id="7Ax-ym-Ecu"/>
+                            <constraint firstItem="wkO-i3-YjY" firstAttribute="top" secondItem="9ii-3h-1Pp" secondAttribute="top" id="8ff-gB-9at"/>
+                            <constraint firstItem="6Ro-aX-Ea4" firstAttribute="leading" secondItem="jeX-IY-hUu" secondAttribute="leading" constant="10" id="EAg-us-erP"/>
+                            <constraint firstItem="wkO-i3-YjY" firstAttribute="leading" secondItem="9ii-3h-1Pp" secondAttribute="leading" id="FiV-iZ-5MZ"/>
+                            <constraint firstItem="uCB-cD-8dZ" firstAttribute="top" secondItem="9ii-3h-1Pp" secondAttribute="top" id="IL5-EO-XSI"/>
+                            <constraint firstAttribute="bottom" secondItem="wkO-i3-YjY" secondAttribute="bottom" id="OAt-Y9-TsV"/>
+                            <constraint firstAttribute="trailing" secondItem="wkO-i3-YjY" secondAttribute="trailing" id="P5j-5Z-sDi"/>
+                            <constraint firstItem="6Ro-aX-Ea4" firstAttribute="top" secondItem="jeX-IY-hUu" secondAttribute="top" constant="4" id="PS6-h7-6Op"/>
+                            <constraint firstItem="QBk-3k-TTL" firstAttribute="top" secondItem="jeX-IY-hUu" secondAttribute="top" constant="2" id="gAB-um-H8L"/>
+                            <constraint firstItem="uCB-cD-8dZ" firstAttribute="leading" secondItem="9ii-3h-1Pp" secondAttribute="leading" id="ial-Sw-UaD"/>
+                            <constraint firstAttribute="trailing" secondItem="uCB-cD-8dZ" secondAttribute="trailing" id="jvL-0Z-CIC"/>
+                            <constraint firstItem="LTS-wf-whQ" firstAttribute="leading" secondItem="jeX-IY-hUu" secondAttribute="leading" constant="20" id="npM-GT-ITX"/>
+                            <constraint firstItem="jeX-IY-hUu" firstAttribute="bottom" secondItem="LTS-wf-whQ" secondAttribute="bottom" constant="20" id="rkC-38-i5d"/>
+                            <constraint firstItem="jeX-IY-hUu" firstAttribute="trailing" secondItem="LTS-wf-whQ" secondAttribute="trailing" constant="20" id="wno-sm-zqs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bySuitButton" destination="MSZ-o8-kwq" id="TMj-xw-MFl"/>
+                        <outlet property="byValueButton" destination="u0J-BQ-qMe" id="Jgv-xI-zKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEu-UA-IFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2968.8000000000002" y="-669.71514242878561"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BnC-A8-Dzc">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="0BO-4x-oZ0" customClass="TabBarController" customModule="Burkozel" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="tabbar_background" id="d75-Zh-VPR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lu9-sZ-Gij" kind="relationship" relationship="viewControllers" id="J5Q-nv-ZQC"/>
+                        <segue destination="u7v-Fg-YGW" kind="relationship" relationship="viewControllers" id="FXC-Wr-kor"/>
+                        <segue destination="DsX-a0-nep" kind="relationship" relationship="viewControllers" id="CPG-Yc-K2j"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fu-0H-6jg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Открытые игры-->
+        <scene sceneID="4Hu-no-pp3">
+            <objects>
+                <viewController id="u7v-Fg-YGW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Jd-XL-aVB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BAP-dS-lu0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Открытые игры" image="tabbar_icon_open_inactive" selectedImage="tabbar_icon_open_active" id="mcf-0r-8jA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yM7-Pn-Pfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="134"/>
+        </scene>
+        <!--Создать игру-->
+        <scene sceneID="FKw-NW-8UE">
+            <objects>
+                <viewController id="DsX-a0-nep" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2BY-O4-eyQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hpa-vD-Ec3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Создать игру" image="tabbar_icon_star_inactive" selectedImage="tabbar_icon_star_active" id="mek-t8-OYh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hI8-Im-e5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="913"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="fBf-Qp-oNi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lu9-sZ-Gij" customClass="NavigationController" customModule="Burkozel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="tabbar_icon_home_inactive" selectedImage="tabbar_icon_home_active" id="N5b-Dp-Kbf"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ydh-4r-FTi">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.15294117647058825" green="0.21176470588235294" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="-2"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="-2"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SQZ-ld-4jG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7m-SV-pJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045.5999999999999" y="-668.81559220389806"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="03-Красная" width="212" height="299"/>
+        <image name="IMG_3589_720" width="720" height="480"/>
+        <image name="Main_background" width="750" height="1334"/>
+        <image name="back_button" width="18" height="21"/>
+        <image name="background_top" width="375" height="82.5"/>
+        <image name="button_icon_achievments" width="32.5" height="26.5"/>
+        <image name="button_icon_friends" width="32.5" height="26.5"/>
+        <image name="button_icon_rules" width="32.5" height="26.5"/>
+        <image name="button_icon_settings" width="32.5" height="26.5"/>
+        <image name="button_icon_share" width="32.5" height="26.5"/>
+        <image name="button_icon_tournirs" width="32.5" height="26.5"/>
+        <image name="settings_frame_down" width="338" height="53.5"/>
+        <image name="settings_frame_up" width="338" height="53.5"/>
+        <image name="tabbar_background" width="1" height="1"/>
+        <image name="tabbar_icon_home_active" width="23" height="23.5"/>
+        <image name="tabbar_icon_home_inactive" width="23" height="23.5"/>
+        <image name="tabbar_icon_open_active" width="29" height="23.5"/>
+        <image name="tabbar_icon_open_inactive" width="29" height="23.5"/>
+        <image name="tabbar_icon_star_active" width="24" height="23.5"/>
+        <image name="tabbar_icon_star_inactive" width="24" height="23.5"/>
+    </resources>
+</document>
